@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Ally</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+  </head>
+  <body>
+        <div>
+          <h2 class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Legal AI</h2>
+        </div>
+    <div class="container">
+        <!-- Case Information Section -->
+        <section class="form-section">
+            <h2>Case Information</h2>
+            <input type="text" placeholder="Case Caption (e.g., John Doe v. Jane Smith)">
+            <input type="text" placeholder="Address of the Court">
+            <input type="text" placeholder="Title of the Document">
+            <textarea placeholder="Description of the Document"></textarea>
+        </section>
+
+        <!-- User Details Section -->
+        <section class="form-section">
+            <h2>User Details</h2>
+            <div class="input-row">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="text" placeholder="Address">
+            <div class="input-row">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Pin Code">
+            </div>
+            <div class="input-row">
+                <input type="text" placeholder="Phone Number">
+                <input type="email" placeholder="Email">
+            </div>
+        </section>
+
+        <!-- File Upload Section -->
+        <section class="form-section">
+            <h2>Upload Document</h2>
+            <label for="fileUpload" class="file-label">Choose a file (PDF only)</label>
+            <input type="file" id="fileUpload" accept=".pdf">
+        </section>
+
+        <!-- Submit Button -->
+        <button class="submit-btn">Submit</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
