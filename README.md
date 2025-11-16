@@ -1,72 +1,45 @@
-# Legal-Ally
+#  Legal Ally
 
-AI-Powered Legal Assistance Platform
+**AI-Powered Legal Assistance Platform**
 
 Legal Ally is a web-based frontend prototype designed to democratize access to legal resources. It aims to help users get instant answers to legal questions, analyze contracts for hidden risks, and fill out complex legal forms with confidence.
 
-## Features
-1.  Legal Search
-Intent: A dedicated interface for users to ask natural language legal questions (e.g., "What is the statute of limitations in Delhi?").
+##  Features
 
-UI: Clean, distraction-free search bar powered by Tailwind CSS.
+### 1.  Legal Search
+* **Intent:** A dedicated interface for users to ask natural language legal questions (e.g., "What is the statute of limitations in Delhi?").
+* **UI:** Clean, distraction-free search bar powered by Tailwind CSS.
 
-2.  Contract Analysis
-Risk Assessment: A module allowing users to upload contract files (.pdf, .doc, .txt) or paste raw text.
+### 2.  Contract Analysis
+* **Risk Assessment:** A module allowing users to upload contract files (`.pdf`, `.doc`, `.txt`) or paste raw text.
+* **Goal:** To analyze documents for compliance issues, liabilities, and deadlines.
+* **Interface:** Drag-and-drop file upload support.
 
-Goal: To analyze documents for compliance issues, liabilities, and deadlines.
+### 3.  Smart Form Filler
+* **Case Management:** Structured inputs for Case Information (Caption, Court Address) and User Details.
+* **Document Handling:** File upload functionality for case-specific documents.
+* **Validation:** Vanilla JavaScript validation to ensure file selection and submission feedback.
 
-Interface: Drag-and-drop file upload support.
+##  Tech Stack
 
-3.  Smart Form Filler
-Case Management: Structured inputs for Case Information (Caption, Court Address) and User Details.
+* **Frontend Structure:** HTML5
+* **Styling:** * **Tailwind CSS** (via CDN) for the Landing, Search, and Analysis pages.
+    * **Custom CSS** (`styles.css`) for the Form Filler module.
+* **Interactivity:** Vanilla JavaScript (`script.js`) for DOM manipulation and event handling.
+* **Icons:** Phosphor Icons (via SVG).
 
-Document Handling: File upload functionality for case-specific documents.
+##  Project Structure
 
-Validation: Vanilla JavaScript validation to ensure file selection and submission feedback.
-
-## Tech Stack
-Frontend Structure: HTML5
-
-Styling:
-
-Tailwind CSS (via CDN) for the Landing, Search, and Analysis pages.
-
-Custom CSS (styles.css) for the Form Filler module.
-
-Interactivity: Vanilla JavaScript (script.js) for DOM manipulation and event handling.
-
-Icons: Phosphor Icons (via SVG).
-
-## Project Structure
-Bash
-
+```bash
 ├── landing page.html          # Main entry point/Home page
 ├── legal search page.html     # Search interface
 ├── contract analysis page.html # Contract upload and text analysis interface
 ├── form filler page.html      # Detailed form for legal case info
 ├── styles.css                 # Custom styling for the form filler
 └── script.js                  # Logic for file uploads and form submission
+```
 
-## Installation & Usage
-Since this is a static frontend project, no complex installation is required.
-
-Clone the repository:
-
-Bash
-
-git clone https://github.com/yourusername/legal-ally.git
-Navigate to the project folder:
-
-Bash
-
-cd legal-ally
-Run the application:
-
-Simply double-click landing page.html to open it in your web browser.
-
-Alternatively, use a live server extension (like Live Server in VS Code) for the best experience.
-
-## Future Enhancements
+##  Future Enhancements
 Backend Integration: Connect the frontend to a Python/Node.js backend to process AI queries.
 
 OCR Capability: Implement OCR to read scanned PDF contracts.
@@ -74,7 +47,3 @@ OCR Capability: Implement OCR to read scanned PDF contracts.
 Auth System: Add user login/signup functionality.
 
 News Feed: Activate the "News" section to fetch real-time legal updates based on the user's region.
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
